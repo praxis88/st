@@ -106,7 +106,6 @@ static const char *colorname[] = {
  	"#fdf6e3",  /* 15: brwhite  */
 };
 
-
 /*
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
