@@ -6,13 +6,13 @@ st is a simple terminal emulator for X which sucks less.
 
 This is a fork of ST, the original repo can be found here: [https://git.suckless.org/st/](https://git.suckless.org/st/)
 The original ST webpage is here: [https://st.suckless.org/](https://st.suckless.org/)
-Updated to version 0.8.1.
+Updated to version 0.8.2.
 
 ### Patches applied
 
 * [Alpha](https://st.suckless.org/patches/alpha/) : This patch allows users to change the opacity of the background. Note that you need an X composite manager (e.g. compton, xcompmgr) to make this patch effective.
 * [Scrollback](https://st.suckless.org/patches/scrollback/) : Scroll back through terminal output using Shift+{PageUp, PageDown} and Shift+MouseWheel.
-* [Solarized](https://st.suckless.org/patches/solarized/) : Solarized is a color scheme by Ethan Schoonover which exists in a dark and a light variant.
+* [Xresources](https://st.suckless.org/patches/xresources/) : This patch adds the ability to configure st via Xresources. At startup, st will read and apply the resources named in the resources[] array in config.h.
 
 ##### Applying/Removing Patches
 ```
