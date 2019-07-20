@@ -203,8 +203,8 @@ static MouseShortcut mshortcuts[] = {
 #define MODKEY Mod1Mask
 MouseKey mkeys[] = {
 	/* button               mask            function        argument */
-	{ Button4,              ShiftMask,      kscrollup,      {.i =  1} },
-	{ Button5,              ShiftMask,      kscrolldown,    {.i =  1} },
+	{ Button4,              ShiftMask,      kscrollup,      {.i =  5} },
+	{ Button5,              ShiftMask,      kscrolldown,    {.i =  5} },
 	{ Button4,              MODKEY|ShiftMask,    zoom,      {.f = +1} },
 	{ Button5,              MODKEY|ShiftMask,    zoom,      {.f = -1} },
 };
