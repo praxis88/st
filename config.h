@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "DejaVuSansMono:pixelsize=14:antialias=true:autohint=true";
+static char *font = "Liberation Mono:pixelsize=14:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -233,6 +233,9 @@ static Shortcut shortcuts[] = {
 	{ MODKEY|ShiftMask,     XK_Down,        zoom,           {.f = -1} },
 	{ MODKEY|ShiftMask,     XK_K,           zoom,           {.f = +1} },
 	{ MODKEY|ShiftMask,     XK_J,           zoom,           {.f = -1} },
+	{ MODKEY|ShiftMask,     XK_plus,        zoom,           {.f = +1} },
+	{ MODKEY|ShiftMask,     XK_underscore,  zoom,           {.f = -1} },
+	{ MODKEY|ShiftMask,     XK_parenright,  zoomreset,      {.f =  0} },
 };
 
 /*
@@ -408,6 +411,9 @@ static Key key[] = {
 	{ XK_Next,          ControlMask,    "\033[6;5~",     0,    0},
 	{ XK_Next,          ShiftMask,      "\033[6;2~",     0,    0},
 	{ XK_Next,          XK_ANY_MOD,     "\033[6~",       0,    0},
+    { XK_parenright, Mod1Mask|ShiftMask,"\033[41;6u",    0,    0},
+    { XK_underscore, Mod1Mask|ShiftMask,"\033[95;4u",    0,    0},
+    { XK_plus,       Mod1Mask|ShiftMask,"\033[43;4u",    0,    0},
 	{ XK_F1,            XK_NO_MOD,      "\033OP" ,       0,    0},
 	{ XK_F1, /* F13 */  ShiftMask,      "\033[1;2P",     0,    0},
 	{ XK_F1, /* F25 */  ControlMask,    "\033[1;5P",     0,    0},
