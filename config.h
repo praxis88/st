@@ -10,7 +10,8 @@ static int borderpx = 2;
 
 /* Spare fonts */
 static char *font2[] = {
-	"DejaVu Sans Mono:pixelsize=14:antialias=true:autohint=true",
+	"Droid Sans Mono:style=Regular:pixelsize=14:antialias=true:autohint=true",
+	"Menlo:style=Regular:pixelsize=14:antialias=true:autohint=true",
 	"Inconsolata for Powerline:pixelsize=14:antialias=true:autohint=true",
 	"Hack Nerd Font Mono:pixelsize=14:antialias=true:autohint=true", 
 };
